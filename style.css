@@ -1,0 +1,61 @@
+body {
+	background: url(file:///C:/Users/Samsung/Documents/Subjects/Programming/Image/background.jpg);
+	background-size: cover;
+}
+
+#nav-bar {
+	margin: 0 auto;
+}
+
+nav {
+	margin: 50px 0;
+	background-color: blue;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {
+	display:inline-block;
+	background-color: blue;
+}
+
+nav ul li:hover { 
+	background-color: navy;
+}
+
+nav a {
+	display: block;
+	padding: 0 10px;	
+	color: aqua;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+}
+
+nav ul li:hover > ul {
+	display: inherit;
+}
+
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}	
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
